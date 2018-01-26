@@ -87,6 +87,7 @@
         <item name="favorites_padding_bottom">0dip</item>
         <!-- Popup menu -->
         <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+		<item name="android:navigationBarColor">@color/primary_color</item>
     </style>
 
     <style name="LaunchScreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
