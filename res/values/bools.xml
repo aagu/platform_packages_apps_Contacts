@@ -14,8 +14,8 @@
      limitations under the License.
 -->
 <resources>
-
     <bool name="quickcontact_two_panel">false</bool>
     <bool name="contacteditor_two_panel">false</bool>
-
+    <bool name="windowLightNavigationBar">true</bool>
+	<bool name="windowDarkNavigationBar">false</bool>
 </resources>

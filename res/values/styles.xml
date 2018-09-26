@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2009 The Android Open Source Project
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -41,6 +38,8 @@
 
     <style name="PeopleTheme" parent="@android:style/Theme.Material.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/ContactsActionBarStyle</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightNavigationBar">true</item>
         <!-- Style for the overflow button in the actionbar. -->
         <item name="android:actionOverflowButtonStyle">@style/ContactsActionBarOverflowQP</item>
         <item name="android:actionModeCloseDrawable">@drawable/quantum_ic_close_vd_theme_24</item>
@@ -87,7 +86,6 @@
         <item name="favorites_padding_bottom">0dip</item>
         <!-- Popup menu -->
         <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
-		<item name="android:navigationBarColor">@color/primary_color</item>
     </style>
 
     <style name="LaunchScreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -104,6 +102,8 @@
     </style>
 
     <style name="PeopleThemeAppCompat" parent="Theme.AppCompat.Light.DarkActionBar">
+	    <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightNavigationBar">true</item>
         <!-- Styles that require AppCompat compatibility, remember to update both sets -->
         <item name="android:actionBarStyle">@style/ContactsActionBarStyleAppCompat</item>
         <item name="actionBarStyle">@style/ContactsActionBarStyleAppCompat</item>
@@ -422,7 +422,6 @@
     </style>
 
     <!-- TextView style used for headers.
-
 This is similar to ?android:attr/listSeparatorTextView but uses different
 background and text color. See also android:style/Widget.Holo.TextView.ListSeparator
 (which is private, so we cannot specify it as a parent style).  -->
