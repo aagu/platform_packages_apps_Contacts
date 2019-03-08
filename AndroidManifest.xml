@@ -20,7 +20,7 @@
           android:versionName="1.7.31">
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="25"
         android:targetSdkVersion="28"/>
 
     <original-package android:name="com.android.contacts"/>
@@ -58,6 +58,9 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <!-- Required in P to run Service.startForeground() -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <!-- Permission to access Content Provider-->
+    <uses-permission android:name="aagu.NumberLocationProvider.READ" />
+    <uses-permission android:name="aagu.NumberLocationProvider.WRITE" />
 
     <uses-feature
         android:name="android.hardware.telephony"

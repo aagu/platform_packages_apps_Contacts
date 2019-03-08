@@ -52,6 +52,7 @@ import android.widget.TextView;
 
 import com.android.contacts.R;
 import com.android.contacts.dialog.CallSubjectDialog;
+import com.aagu.numberlocation.NumberUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -664,8 +665,14 @@ public class ExpandingEntryCardView extends CardView {
         }
 
         final TextView text = (TextView) view.findViewById(R.id.text);
+        
+        String locAndCarrier = NumberUtil.getNumberUtil(getContext()).getLocalNumberInfo(entry.getHeader(), true);
         if (!TextUtils.isEmpty(entry.getText())) {
-            text.setText(entry.getText());
+            if (!TextUtils.isEmpty(locAndCarrier)) {
+                text.setText(entry.getText() + " " + locAndCarrier);
+            } else {
+                text.setText(entry.getText());
+            }
         } else {
             text.setVisibility(View.GONE);
         }

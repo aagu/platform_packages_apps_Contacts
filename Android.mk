@@ -27,8 +27,13 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     android-common \
     com.android.vcard \
     guava \
-    libphonenumber
+    libphonenumber \
+    prebuilt-okhttp \
+    prebuilt-okio
 
+LOCAL_STATIC_JAVA_AAR_LIBRARIES := \
+	prebuilt-numberlocation
+    
 LOCAL_USE_AAPT2 := true
 
 LOCAL_AAPT_FLAGS := \
